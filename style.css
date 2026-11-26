@@ -292,3 +292,10 @@ p{ text-wrap:pretty }
 
 /* Keep the full values ticker readable on narrow screens. */
 @media(max-width:560px){.ticker .wrap{display:flex;justify-content:center;flex-wrap:wrap;gap:.45rem .35rem;overflow:visible;white-space:normal;font-size:.62rem;line-height:1.35;letter-spacing:.1em}.ticker .wrap span{flex:0 0 calc(50% - .25rem);text-align:center}.ticker .wrap b{display:none}}
+
+/* Keep support actions inside the viewport on small screens. */
+.support-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:2.5rem;align-items:center;min-width:0}
+.support-grid>div,.support-panel{min-width:0}
+.support-panel strong{overflow-wrap:anywhere}
+@media(max-width:700px){.support-grid{grid-template-columns:minmax(0,1fr);gap:1.5rem}.support .actions>*{max-width:100%;white-space:normal;text-align:center}}
+@media(max-width:560px){.ticker{display:none}}
