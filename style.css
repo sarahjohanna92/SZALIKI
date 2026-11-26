@@ -332,3 +332,18 @@ p{ text-wrap:pretty }
   .intro-copy>p+p{order:5}
   .intro-copy>.more{order:6;margin-top:.1rem}
 }
+
+/* More compact, calmer homepage hero and headings on phones. */
+@media(max-width:560px){
+  .hero{padding:.8rem 0 1.2rem;gap:.8rem}
+  .hero h1{font-size:clamp(2.25rem,10.5vw,3.2rem)!important;line-height:.98;margin:.4rem 0 .65rem}
+  .hero .eyebrow{margin-bottom:.35rem}
+  .hero .lead{font-size:.94rem;line-height:1.48;margin-bottom:.45rem}
+  .actions{margin-top:.7rem;gap:.55rem}
+  .actions .button{font-size:.88rem;padding:.72rem .95rem}
+  .hero-photo{height:clamp(240px,76vw,360px)}
+  h1,.page-hero h1{font-size:clamp(2.2rem,10vw,3.05rem)!important;line-height:.98}
+  h2{font-size:clamp(1.9rem,8.2vw,2.7rem)!important;line-height:1.03}
+  h3{font-size:clamp(1.3rem,5.8vw,1.6rem)!important;line-height:1.12}
+  .section{padding:2.2rem 0}
+}
