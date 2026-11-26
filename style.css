@@ -360,3 +360,9 @@ p{ text-wrap:pretty }
   .hero .lead{order:4;margin:0;font-size:.92rem;line-height:1.45}
   .hero-photo{height:clamp(230px,72vw,340px)}
 }
+
+/* Keep the Polish hero message on two balanced lines. */
+.hero h1 em{font-size:.78em;white-space:nowrap}
+
+/* Keep the hero title balanced across all language versions. */
+.hero h1 em{display:inline-block;font-size:.78em;white-space:nowrap}
