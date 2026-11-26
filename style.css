@@ -366,3 +366,6 @@ p{ text-wrap:pretty }
 
 /* Keep the hero title balanced across all language versions. */
 .hero h1 em{display:inline-block;font-size:.78em;white-space:nowrap}
+
+/* Keep the civil-safety headline on one line on desktop; retain the editorial break on phones. */
+@media(min-width:901px){.safety-band h2{max-width:none;white-space:nowrap;font-size:clamp(2.1rem,4vw,3.5rem)}.safety-band h2 br{display:none}}
