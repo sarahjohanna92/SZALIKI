@@ -385,3 +385,8 @@ p{ text-wrap:pretty }
 /* Shorten the hero photo and keep the car lettering visible on phones. */
 @media(min-width:901px){.hero-photo{height:min(58vw,560px);min-height:400px}.hero-photo img{object-position:center 62%}}
 @media(max-width:560px){.hero-photo{height:clamp(220px,66vw,310px)}.hero-photo img{object-position:center 78%}}
+
+
+/* Mobile: keep safety terms and definitions side by side, and prevent long story text from being clipped. */
+@media(max-width:760px){.awareness-copy,.awareness-photos,.war-hope-copy,.war-hope-gallery,.warmth-copy,.warmth-photo-stack{min-width:0}.awareness-copy h2,.war-hope-copy h2,.warmth-copy h2{max-width:100%;font-size:clamp(1.7rem,7.2vw,2.3rem)!important;line-height:1.08;letter-spacing:-.035em;overflow-wrap:anywhere;hyphens:auto}.awareness-copy p,.war-hope-copy p,.warmth-copy p{max-width:100%;overflow-wrap:anywhere}}
+@media(max-width:560px){.term{grid-template-columns:minmax(5.5rem,.42fr) minmax(0,1fr);gap:.65rem;align-items:start}.term dt{font-size:1rem;line-height:1.3;overflow-wrap:anywhere}.term dd{min-width:0;font-size:.85rem;line-height:1.5;overflow-wrap:anywhere}}
