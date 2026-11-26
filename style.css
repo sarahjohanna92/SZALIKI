@@ -348,3 +348,15 @@ p{ text-wrap:pretty }
   h3{font-size:clamp(1.2rem,5.4vw,1.5rem)!important;line-height:1.12}
   .section{padding:1.9rem 0}
 }
+
+
+/* Final mobile pass: keep calls to action close to the title and give text room. */
+@media(max-width:560px){
+  .hero{padding:.65rem 0 .8rem;gap:.55rem}
+  .hero>div{display:flex;flex-direction:column;align-items:flex-start}
+  .hero .eyebrow{order:1}
+  .hero h1{order:2;font-size:clamp(1.8rem,8.2vw,2.5rem)!important;line-height:1.02;margin:.3rem 0 .4rem;letter-spacing:-.055em}
+  .hero .actions{order:3;margin:.2rem 0 .55rem}
+  .hero .lead{order:4;margin:0;font-size:.92rem;line-height:1.45}
+  .hero-photo{height:clamp(230px,72vw,340px)}
+}
