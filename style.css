@@ -199,9 +199,9 @@ p{ text-wrap:pretty }
 /* Keep both portraits in section 13 fully visible at matching dimensions. */
 .human-bonds-gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
 .human-bonds-gallery figure:first-child{grid-column:auto}
-.human-bonds-gallery figure img,.human-bonds-gallery figure:first-child img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;object-position:center;background:#e7e1d6}
+.human-bonds-gallery figure img,.human-bonds-gallery figure:first-child img{display:block!important;width:100%!important;height:clamp(290px,34vw,440px)!important;aspect-ratio:3/4;object-fit:cover!important;object-position:center top!important;background:#e7e1d6}
 .human-bonds-gallery figcaption{min-height:3.3rem;display:flex;align-items:center}
-@media(max-width:560px){.human-bonds-gallery figure img,.human-bonds-gallery figure:first-child img{height:auto;aspect-ratio:3/4}}
+@media(max-width:560px){.human-bonds-gallery figure img,.human-bonds-gallery figure:first-child img{height:clamp(230px,68vw,310px)!important;aspect-ratio:3/4}}
 
 
 /* A playful circular portrait wall: photos remain complete inside their frames. */
