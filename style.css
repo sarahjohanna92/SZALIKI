@@ -282,3 +282,10 @@ p{ text-wrap:pretty }
 .nav .language-menu svg{width:24px;height:24px}
 @media(max-width:900px){.nav .brand img{width:72px;height:72px}}
 @media(max-width:560px){.nav .brand img{width:68px;height:68px}}
+
+/* Language switch: visible at the right edge of the header, separate from navigation links */
+.site-header{position:sticky;isolation:isolate}
+.nav{padding-right:5.25rem}
+.nav .language-menu{position:absolute;right:max(24px,calc((100vw - 1240px)/2));top:50%;transform:translateY(-50%);margin:0}
+@media(max-width:900px){.nav{padding:1rem 5.25rem 1rem 0}.nav .language-menu{top:1rem;right:max(16px,calc((100vw - 500px)/2))}}
+@media(max-width:560px){.nav{padding-right:4.5rem}.nav .language-menu{right:16px;top:1rem}}(max-width:560px){.nav{padding-right:4.5rem}.nav .language-menu{right:16px;top:1rem}}
