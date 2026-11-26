@@ -381,3 +381,7 @@ p{ text-wrap:pretty }
   .hero .actions .button{display:block;padding:.7rem .7rem;font-size:clamp(.72rem,3.6vw,.9rem);line-height:1.15;text-align:center;white-space:nowrap}
   .hero .lead{grid-row:3;margin:0;font-size:.92rem;line-height:1.45}
 }
+
+/* Shorten the hero photo and keep the car lettering visible on phones. */
+@media(min-width:901px){.hero-photo{height:min(58vw,560px);min-height:400px}.hero-photo img{object-position:center 62%}}
+@media(max-width:560px){.hero-photo{height:clamp(220px,66vw,310px)}.hero-photo img{object-position:center 78%}}
