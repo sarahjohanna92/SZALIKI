@@ -337,7 +337,7 @@ p{ text-wrap:pretty }
 @media(max-width:560px){
   .hero{padding:.8rem 0 1.2rem;gap:.8rem}
   .hero h1{font-size:clamp(2rem,9.2vw,2.8rem)!important;line-height:.98;margin:.4rem 0 .65rem}
-  .hero h1 br,h2 br{display:none}
+  .hero h1 br{display:none}
   .hero .eyebrow{font-size:clamp(.64rem,3.1vw,.78rem);letter-spacing:.085em;white-space:nowrap;margin-bottom:.35rem}
   .hero .lead{font-size:.94rem;line-height:1.48;margin-bottom:.45rem}
   .actions{margin-top:.7rem;gap:.55rem}
