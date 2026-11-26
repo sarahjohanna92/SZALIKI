@@ -319,3 +319,16 @@ p{ text-wrap:pretty }
   .intro-grid{gap:1.25rem}
   .photo-mosaic{padding-bottom:.6rem}
 }
+
+/* Mobile reading order for the shared homepage introduction (all languages). */
+@media(max-width:560px){
+  .section:has(.intro-grid){padding-block:1.25rem 2rem}
+  .intro-grid{grid-template-columns:minmax(0,1fr);gap:.45rem}
+  .intro-copy{display:contents}
+  .intro-copy>.index{order:1;margin:0}
+  .intro-copy>h2{order:2;margin:.15rem 0 .6rem;font-size:clamp(2.1rem,9vw,2.8rem);line-height:1}
+  .photo-mosaic{order:3;width:100%;grid-template-rows:clamp(125px,37vw,175px) clamp(125px,37vw,175px);gap:.45rem;padding:0 0 .2rem}
+  .intro-copy>p{order:4;margin:0 0 .65rem;font-size:.94rem;line-height:1.55}
+  .intro-copy>p+p{order:5}
+  .intro-copy>.more{order:6;margin-top:.1rem}
+}
